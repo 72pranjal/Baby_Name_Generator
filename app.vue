@@ -1,8 +1,8 @@
 <template>
-  <div class="text-center mx-72 my-32 w-1/2 h-96">
-    <h1 class="text-xl">Baby Name Generator</h1>
-    <p>Choose your options and click the "Find Names" button below</p>
-    <div>
+  <div class="text-center mx-72 my-8 w-1/2 h-96">
+    <h1 class="text-xl py-4">Baby Name Generator</h1>
+    <p class="py-4" >Choose your options and click the "Find Names" button below</p>
+    <div class=" bg-red-200 ">
       <div>
         <h4>1) Choose a gender</h4>
         <div>
@@ -184,8 +184,8 @@
         Find Names
       </button>
     </div>
-    <div class=" flex mx-48 my-auto">
-        <div v-for="name in selectedNames" :key="name">
+    <div class=" flex mx-26 my-auto">
+        <div v-for="name in selectedNames" :key="name" class="mx-auto my-8  bg-teal-200 w-24 text-orange-500 rounded-full">
         <p @click="remove(name)">x</p>
         <h4>{{name}}</h4>
         
